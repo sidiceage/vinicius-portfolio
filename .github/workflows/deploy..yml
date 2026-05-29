@@ -24,8 +24,10 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Check build output
-        run: ls -la .output && ls -la .output/server
+      - name: Check project files
+        run: |
+          ls -la
+          find . -maxdepth 3 -type f | head -100
 
       - name: Deploy to Cloudflare Workers
         run: npx wrangler deploy
