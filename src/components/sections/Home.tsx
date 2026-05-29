@@ -24,7 +24,7 @@ export function HomeSection() {
           </Reveal>
           <Reveal effect="fade" delay={0.2}>
             <p className="text-xl text-foreground/85">
-              I am a{" "}
+              I am a {" "}
               <span className="text-[oklch(0.85_0.18_200)]">Full-Stack Developer </span>
               <span className="ml-1 inline-block w-[2px] h-6 align-middle bg-[oklch(0.85_0.18_200)] animate-pulse" />
               <span className="text-[oklch(0.85_0.18_200)]"> AI Integration Specialist</span>
