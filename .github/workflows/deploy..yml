@@ -24,6 +24,9 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Check build output
+        run: ls -la .output && ls -la .output/server
+
       - name: Deploy to Cloudflare Workers
         run: npx wrangler deploy
         env:
